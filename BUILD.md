@@ -11,7 +11,8 @@ Simply compile as so:
 g++ src/main.cpp -o cplusdice
 ```
 
-This will create the executable `cplusdice` (if on Linux) or `cplusdice.exe` (if on Windows).
+This will create the executable `cplusdice` (if on Linux) or `cplusdice.exe` 
+(if on Windows).
 
 ## Build using Clang
 
@@ -23,7 +24,9 @@ clang++ src/main.cpp -o cplusdice
 
 ## Verifying the compilation
 
-In the event that you suspect that it didn't compile correctly despite the compilation finishing with no error message, then you can verify the executable just by attempting to run it. 
+In the event that you suspect that it didn't compile correctly despite the 
+compilation finishing with no error message, then you can verify the executable 
+just by attempting to run it. 
 Like so:
 
 If you're on Linux:
