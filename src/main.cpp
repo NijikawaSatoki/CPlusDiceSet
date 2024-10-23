@@ -22,6 +22,41 @@
 using namespace std;
 
 /* -----------------------------------------------------------------------------
+ * User-defined functions
+ * -----------------------------------------------------------------------------
+ */
+
+int rollD4() {
+    int roll;
+    roll = ( rand() % 4 ) + 1;
+    return roll;
+}
+
+int rollD6() {
+    int roll;
+    roll = ( rand() % 6 ) + 1;
+    return roll;
+}
+
+int rollD8() {
+    int roll;
+    roll = ( rand() % 8 ) + 1;
+    return roll;
+}
+
+int rollD12() {
+    int roll;
+    roll = ( rand() % 12 ) + 1;
+    return roll;
+}
+
+int rollD20() {
+    int roll;
+    roll = ( rand() % 20 ) + 1;
+    return roll;
+}
+
+/* -----------------------------------------------------------------------------
  * Main code
  * -----------------------------------------------------------------------------
  */
@@ -46,27 +81,27 @@ int main() {
         cin >> dice;
         if (dice == "d4") {
             // Roll the dice
-            roll = ( rand() % 4 ) + 1;
+            roll = rollD4();
             // Print the result
             cout << "Your 1" << dice << " roll resulted in " << roll << "." << endl;
         } else if (dice == "d6") {
             // Roll the dice
-            roll = ( rand() % 6 ) + 1;
+            roll = rollD6();
             // Print the result
             cout << "Your 1" << dice << " roll resulted in " << roll << "." << endl;
         } else if (dice == "d8") {
             // Roll the dice
-            roll = ( rand() % 8 ) + 1;
+            roll = rollD8();
             // Print the result
             cout << "Your 1" << dice << " roll resulted in " << roll << "." << endl;
         } else if (dice == "d12") {
             // Roll the dice
-            roll = ( rand() % 12 ) + 1;
+            roll = rollD12();
             // Print the result
             cout << "Your 1" << dice << " roll resulted in " << roll << "." << endl;
         } else if (dice == "d20") {
             // Roll the dice
-            roll = ( rand() % 20 ) + 1;
+            roll = rollD20();
             // Print the result
             cout << "Your 1" << dice << " roll resulted in " << roll << "." << endl;
         } else if (dice != "d4" && dice != "d6" && dice != "d8" && dice != "d12" && dice != "d20") {
