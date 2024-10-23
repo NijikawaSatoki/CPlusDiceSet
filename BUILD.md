@@ -8,7 +8,7 @@ But if you must use Clang, then follow the instructions for Clang.
 Simply compile as so:
 
 ```
-g++ src/main.cpp -o cplusdice
+g++ src/main.cpp src/class/*.cpp -o cplusdice
 ```
 
 This will create the executable `cplusdice` (if on Linux) or `cplusdice.exe` 
@@ -19,7 +19,7 @@ This will create the executable `cplusdice` (if on Linux) or `cplusdice.exe`
 Similar to the GCC instructions, just run
 
 ```
-clang++ src/main.cpp -o cplusdice
+clang++ src/main.cpp src/class/*.cpp -o cplusdice
 ```
 
 ## Verifying the compilation
