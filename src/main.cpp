@@ -83,6 +83,7 @@ int main() {
         // Ask the user which dice they want to roll
         cout << "Which dice would you like to roll?" << endl;
         cout << "Available are:" << NEW_LINE << "d4" << SINGLE_TAB << "d6" << SINGLE_TAB << "d8" << SINGLE_TAB << "d12" << NEW_LINE << "d20" << endl;
+        cout << "`exit' closes out the program." << endl;
         cin >> dice;
         if (dice == "d4") {
             // Roll the dice
@@ -109,7 +110,10 @@ int main() {
             roll = rollD20();
             // Print the result
             cout << "Your 1" << dice << " roll resulted in " << roll << "." << endl;
-        } else if (dice != "d4" && dice != "d6" && dice != "d8" && dice != "d12" && dice != "d20") {
+        } else if (dice == "exit") {
+            cout << "I see. Well then..." << endl;
+            break;
+        } else if (dice != "d4" && dice != "d6" && dice != "d8" && dice != "d12" && dice != "d20" && dice != "exit") {
             cout << "What... What kind of dice is that?" << endl;
         }
         cout << "Would you like to roll again? [Y/n] ";
