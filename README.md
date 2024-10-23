@@ -11,4 +11,4 @@ Simply follow the onscreen prompts and you'll be fine.
 ## To-Do
 
 - [ ] Implement a means to ask the user how many times they want to roll the specific die.
-- [ ] Maybe put the dice roll functions into their own class
+- [x] Maybe put the dice roll functions into their own class
