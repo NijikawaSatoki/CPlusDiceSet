@@ -65,6 +65,8 @@ int main() {
     // Constants
     const string NEW_LINE = "\n";
     const string SINGLE_TAB = "\t";
+    const string DOUBLE_TAB = "\t\t";
+    const string DOUBLE_QUOTE = "\"";
     // Variables
     // << Integers >>
     int roll = 0;
@@ -74,6 +76,8 @@ int main() {
     string dice = "";
     // Seed initialisation
     srand(time(NULL));
+    cout << DOUBLE_TAB << DOUBLE_QUOTE << "C++ Dice Set" << DOUBLE_QUOTE << endl; // Title
+    cout << "By Niji System" << endl; // Author(s)
     do {
         // Ask the user which dice they want to roll
         cout << "Which dice would you like to roll?" << endl;
