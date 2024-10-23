@@ -64,6 +64,7 @@ int rollD20() {
 int main() {
     // Constants
     const string NEW_LINE = "\n";
+    const string BLANK_LINE = "\n\n";
     const string SINGLE_TAB = "\t";
     const string DOUBLE_TAB = "\t\t";
     const string DOUBLE_QUOTE = "\"";
@@ -77,7 +78,7 @@ int main() {
     // Seed initialisation
     srand(time(NULL));
     cout << DOUBLE_TAB << DOUBLE_QUOTE << "C++ Dice Set" << DOUBLE_QUOTE << endl; // Title
-    cout << "By Niji System" << endl; // Author(s)
+    cout << SINGLE_TAB << "By Niji System" << BLANK_LINE; // Author(s)
     do {
         // Ask the user which dice they want to roll
         cout << "Which dice would you like to roll?" << endl;
