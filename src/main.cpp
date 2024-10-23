@@ -18,43 +18,11 @@
 #include <cstdlib>
 #include <ctime>
 
+// User defined headers
+#include "header/NijiDice.h"
+
 // Establishes the usage of `std' namespace
 using namespace std;
-
-/* -----------------------------------------------------------------------------
- * User-defined functions
- * -----------------------------------------------------------------------------
- */
-
-int rollD4() {
-    int roll;
-    roll = ( rand() % 4 ) + 1;
-    return roll;
-}
-
-int rollD6() {
-    int roll;
-    roll = ( rand() % 6 ) + 1;
-    return roll;
-}
-
-int rollD8() {
-    int roll;
-    roll = ( rand() % 8 ) + 1;
-    return roll;
-}
-
-int rollD12() {
-    int roll;
-    roll = ( rand() % 12 ) + 1;
-    return roll;
-}
-
-int rollD20() {
-    int roll;
-    roll = ( rand() % 20 ) + 1;
-    return roll;
-}
 
 /* -----------------------------------------------------------------------------
  * Main code
@@ -75,6 +43,9 @@ int main() {
     char confirm = ' ';
     // << Strings >>
     string dice = "";
+    // Object initialisation
+    // >> NijiDice <<
+    NijiDice diceRoll;
     // Seed initialisation
     srand(time(NULL));
     cout << DOUBLE_TAB << DOUBLE_QUOTE << "C++ Dice Set" << DOUBLE_QUOTE << endl; // Title
@@ -87,27 +58,27 @@ int main() {
         cin >> dice;
         if (dice == "d4") {
             // Roll the dice
-            roll = rollD4();
+            roll = diceRoll.rollD4();
             // Print the result
             cout << "Your 1" << dice << " roll resulted in " << roll << "." << endl;
         } else if (dice == "d6") {
             // Roll the dice
-            roll = rollD6();
+            roll = diceRoll.rollD6();
             // Print the result
             cout << "Your 1" << dice << " roll resulted in " << roll << "." << endl;
         } else if (dice == "d8") {
             // Roll the dice
-            roll = rollD8();
+            roll = diceRoll.rollD8();
             // Print the result
             cout << "Your 1" << dice << " roll resulted in " << roll << "." << endl;
         } else if (dice == "d12") {
             // Roll the dice
-            roll = rollD12();
+            roll = diceRoll.rollD12();
             // Print the result
             cout << "Your 1" << dice << " roll resulted in " << roll << "." << endl;
         } else if (dice == "d20") {
             // Roll the dice
-            roll = rollD20();
+            roll = diceRoll.rollD20();
             // Print the result
             cout << "Your 1" << dice << " roll resulted in " << roll << "." << endl;
         } else if (dice == "exit") {
