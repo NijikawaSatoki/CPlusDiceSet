@@ -55,6 +55,7 @@ int main() {
         cout << "Which dice would you like to roll?" << endl;
         cout << "Available are:" << NEW_LINE << "d4" << SINGLE_TAB << "d6" << SINGLE_TAB << "d8" << SINGLE_TAB << "d12" << NEW_LINE << "d20" << endl;
         cout << "`exit' closes out the program." << endl;
+        cout << "Please type out your selection and hit [RETURN]: ";
         cin >> dice;
         if (dice == "d4") {
             // Roll the dice
