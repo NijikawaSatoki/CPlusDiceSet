@@ -17,7 +17,7 @@
 #include <cstdlib>
 
 // User defined headers
-#include "../header/NijiDice.h"
+#include "header/NijiDice.h"
 
 /* Roll a four sided die
    Function author: Wamo (Niji System) */
