@@ -1,4 +1,6 @@
-#pragma once
+#ifndef NIJIDICE_H
+#define NIJIDICE_H
+
 class NijiDice {
     int rollD4();
     int rollD6();
@@ -6,3 +8,5 @@ class NijiDice {
     int rollD12();
     int rollD20();
 };
+
+#endif // NIJIDICE_H
