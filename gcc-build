@@ -1,0 +1,5 @@
+#!/bin/sh
+
+g++ -o NijiDice main.cpp \
+NijiDice.cpp \
+-Wall

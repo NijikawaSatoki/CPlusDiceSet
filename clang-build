@@ -1,0 +1,4 @@
+#!/bin/sh
+
+clang++ -o NijiDice \
+main.cpp NijiDice.cpp
