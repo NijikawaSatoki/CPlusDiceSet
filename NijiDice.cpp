@@ -21,7 +21,7 @@
 
 /* Roll a four sided die
    Function author: Wamo (Niji System) */
-int rollD4() {
+int NijiDice::rollD4() {
     int roll;
     roll = (rand() % 4) + 1;
     return roll;
@@ -29,7 +29,7 @@ int rollD4() {
 
 /* Roll a six sided die
    Function author: Wamo (Niji System) */
-int rollD6() {
+int NijiDice::rollD6() {
     int roll;
     roll = (rand() % 6) + 1;
     return roll;
@@ -37,7 +37,7 @@ int rollD6() {
 
 /* Roll an eight sided die
    Function author: Wamo (Niji System) */
-int rollD8() {
+int NijiDice::rollD8() {
     int roll;
     roll = (rand() % 8) + 1;
     return roll;
@@ -45,7 +45,7 @@ int rollD8() {
 
 /* Roll a twelve sided die
    Function author: Wamo (Niji System) */
-int rollD12() {
+int NijiDice::rollD12() {
     int roll;
     roll = (rand() % 12) + 1;
     return roll;
@@ -53,7 +53,7 @@ int rollD12() {
 
 /* Roll a twenty sided die
    Function author: Wamo (Niji System) */
-int rollD20() {
+int NijiDice::rollD20() {
     int roll;
     roll = (rand() % 20) + 1;
     return roll;
