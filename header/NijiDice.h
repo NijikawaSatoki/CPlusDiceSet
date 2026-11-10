@@ -10,3 +10,5 @@ class NijiDice {
 };
 
 #endif // NIJIDICE_H
+
+/* >>>>>> END OF FILE <<<<<< */

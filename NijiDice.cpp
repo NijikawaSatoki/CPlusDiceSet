@@ -58,3 +58,5 @@ int rollD20() {
     roll = (rand() % 20) + 1;
     return roll;
 }
+
+/* >>>>>> END OF FILE <<<<<< */
