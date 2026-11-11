@@ -14,7 +14,6 @@
 // Header libraries
 #include <iostream>
 #include <limits>
-#include <string>
 #include <cstdlib>
 #include <ctime>
 
@@ -31,11 +30,11 @@ using namespace std;
 
 int main() {
     // Constants
-    const string NEW_LINE = "\n";
-    const string BLANK_LINE = "\n\n";
-    const string SINGLE_TAB = "\t";
-    const string DOUBLE_TAB = "\t\t";
-    const string DOUBLE_QUOTE = "\"";
+    const char NEWLINE[] = "\n";
+    const char BLANK_LINE[] = "\n\n";
+    const char SINGLE_TAB[] = "\t";
+    const char DOUBLE_TAB[] = "\t\t";
+    const char DOUBLE_QUOTE[] = "\"";
     // Variables
     // << Integers >>
     int roll = 0;
@@ -53,7 +52,8 @@ int main() {
     do {
         // Ask the user which dice they want to roll
         cout << "Which dice would you like to roll?" << endl;
-        cout << "Available are:" << NEW_LINE << "d4" << SINGLE_TAB << "d6" << SINGLE_TAB << "d8" << SINGLE_TAB << "d12" << NEW_LINE << "d20" << endl;
+        printf("Available are:%s d4 %s d6 %s d8 %s d12 %s d20", NEWLINE, SINGLE_TAB, SINGLE_TAB, SINGLE_TAB, NEWLINE);
+        cout << endl;
         cout << "`exit' closes out the program." << endl;
         cout << "Please type out your selection and hit [RETURN]: ";
         cin >> dice;
