@@ -2,6 +2,7 @@
 #define NIJIDICE_H
 
 class NijiDice {
+public:
     int rollD4();
     int rollD6();
     int rollD8();
